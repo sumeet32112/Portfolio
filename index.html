@@ -54,6 +54,11 @@
   .exp-bullets li { font-size: 14px; color: var(--muted); padding: 5px 0; padding-left: 1.2rem; position: relative; }
   .exp-bullets li::before { content: '▹'; position: absolute; left: 0; color: var(--accent2); font-size: 12px; }
   .exp-bullets li strong { color: var(--text); font-weight: 500; }
+.client-block { margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: rgba(108,99,255,0.045); border: 0.5px solid rgba(108,99,255,0.12); border-radius: 9px; }
+  .client-block:last-child { margin-bottom: 0; }
+  .client-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--accent3); text-transform: uppercase; margin-bottom: 3px; }
+  .client-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; }
+
   .metric { display: inline-block; color: var(--accent3); font-weight: 600; }
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
   .skill-card { padding: 1.25rem 1.5rem; background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 10px; transition: border-color 0.2s, transform 0.2s; }
@@ -112,8 +117,8 @@
   <div class="hero-content">
     <div class="hero-eyebrow">Software Development Engineer</div>
     <h1 class="name"><span class="name-grad">Sumeet Kumar Singh</span></h1>
-    <div class="hero-title">Backend Systems · Microservices · AI-Augmented Dev</div>
-    <p class="hero-desc">3 years building scalable backend systems with Java &amp; Spring Boot. Passionate about AI-driven engineering workflows and high-performance distributed systems. IIT Varanasi (BHU) graduate.</p>
+    <div class="hero-title">Backend Systems · Microservices · AI Engineering</div>
+    <p class="hero-desc">Software Developer and AI Engineer with 3 years of experience building backend microservices, event-driven systems, and AI-powered conversational workflows. IIT Varanasi (BHU) graduate.</p>
     <div class="hero-ctas">
       <a class="btn-primary" href="mailto:sumeetsingh32112@gmail.com">Get in touch</a>
       <a class="btn-ghost" href="https://github.com/sumeet32112" target="_blank">GitHub ↗</a>
@@ -121,8 +126,8 @@
     </div>
     <div class="hero-stats">
       <div><div class="stat-val">3 yrs</div><div class="stat-label">Experience</div></div>
-      <div><div class="stat-val">35%</div><div class="stat-label">Faster Processing</div></div>
-      <div><div class="stat-val">1945</div><div class="stat-label">CodeChef Rating</div></div>
+      <div><div class="stat-val">35%</div><div class="stat-label">Processing Improvement</div></div>
+      <div><div class="stat-val">9</div><div class="stat-label">Commerce Steps</div></div>
       <div><div class="stat-val">3+</div><div class="stat-label">Regional Markets</div></div>
     </div>
   </div>
@@ -142,11 +147,23 @@
         </div>
         <div class="exp-period">Dec 2025 – Present</div>
       </div>
-      <ul class="exp-bullets">
-        <li>Built <strong>AI-assisted SDLC workflows</strong> using Slingshot for automated story generation, code scaffolding, and test creation — reducing repetitive development effort by <span class="metric">~30%</span>.</li>
-        <li>Integrated <strong>GitHub Copilot, Claude.ai, and ChatGPT</strong> into daily engineering workflows; completed formal enterprise Prompt Engineering training.</li>
-        <li>Completed full-stack enterprise training covering Java, Spring Boot, Spring Cloud, React, MySQL, and Docker in an Agile team environment.</li>
-      </ul>
+      <div class="client-block">
+        <div class="client-label">CLIENT · TELECOMMUNICATION</div>
+        <div class="client-name">Verizon</div>
+        <ul class="exp-bullets">
+          <li>Built an end-to-end AI conversational commerce journey in Python using <strong>Google Agent Development Kit (ADK)</strong>, covering 9 purchase steps from device selection to final order placement inside a chat interface.</li>
+          <li>Architected a <strong>hybrid agent design</strong> combining non-deterministic ADK workflows for the upper funnel with deterministic sequential flows for profile, shipping, agreement, order summary, and payment.</li>
+          <li>Implemented <strong>skill-based agent workflows</strong> using ADK <code>SKILL.md</code>-driven skills, keeping conversational capabilities modular and extensible.</li>
+        </ul>
+      </div>
+      <div class="client-block">
+        <div class="client-label">CLIENT · FINANCIAL TECHNOLOGY (FINTECH)</div>
+        <div class="client-name">NCR Atleos</div>
+        <ul class="exp-bullets">
+          <li>Developed and maintained backend microservices using <strong>Java, Spring Boot, and Spring Data JPA</strong> for financial transaction and customer management services.</li>
+          <li>Integrated microservices with external enterprise systems through <strong>REST APIs</strong>, with centralized exception handling, logging, and input validation.</li>
+        </ul>
+      </div>
     </div>
 
     <div class="exp-item">
@@ -158,11 +175,10 @@
         <div class="exp-period">Jun 2023 – Dec 2025</div>
       </div>
       <ul class="exp-bullets">
-        <li><strong>High-Volume API Performance:</strong> Optimized REST endpoints via server-side pagination, query tuning, and efficient data loading — improving response latency by <span class="metric">~30%</span> under peak traffic.</li>
-        <li><strong>Event-Driven Processing:</strong> Built async workflows using <strong>RabbitMQ</strong> for email dispatch, background jobs, and inter-service events — reducing processing bottlenecks by <span class="metric">~35%</span>.</li>
-        <li><strong>Workflow Automation:</strong> Developed cron-based scheduling with Spring Scheduler for task reminders, contributing to a <span class="metric">~20%</span> reduction in overdue user actions.</li>
-        <li><strong>Globalization Enablement:</strong> Led i18n/L10n via centralized Config Server/Client architecture, enabling deployment across <span class="metric">3+ regional markets</span> with dynamic locale support.</li>
-        <li><strong>AI-Augmented Engineering:</strong> Used Claude.ai and GitHub Copilot for code scaffolding, JUnit 5 &amp; Mockito test generation, and documentation to accelerate sprint delivery.</li>
+        <li><strong>High-Volume API Performance:</strong> Optimized data retrieval pipelines for large-scale REST endpoints through server-side pagination, query tuning, and efficient data loading strategies, improving response latency by approximately <span class="metric">30%</span>.</li>
+        <li><strong>Event-Driven Processing:</strong> Built asynchronous workflow pipelines using <strong>RabbitMQ</strong> for email notifications, background jobs, and inter-service event handling, reducing processing bottlenecks by approximately <span class="metric">35%</span>.</li>
+        <li><strong>Workflow Automation:</strong> Developed workflow orchestration services to schedule tasks, trigger notifications, and execute business workflows based on configurable rules, improving workflow completion rates by approximately <span class="metric">20%</span>.</li>
+        <li><strong>Globalization Enablement:</strong> Led internationalization and localization initiatives using centralized <strong>Config Server/Client</strong> architecture, enabling deployment across <span class="metric">3+ regional markets</span> with dynamic language and locale support.</li>
       </ul>
     </div>
   </div>
@@ -176,27 +192,27 @@
     <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-cat">Languages</div>
-        <div class="skill-tags"><span class="skill-tag">Java</span><span class="skill-tag">TypeScript</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML5</span></div>
+        <div class="skill-tags"><span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">TypeScript</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML5</span></div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">Frameworks</div>
-        <div class="skill-tags"><span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">Angular</span><span class="skill-tag">JUnit 5</span><span class="skill-tag">Mockito</span></div>
+        <div class="skill-tags"><span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">Spring Data JPA</span><span class="skill-tag">Google ADK</span><span class="skill-tag">Angular</span><span class="skill-tag">JUnit 5</span><span class="skill-tag">Mockito</span></div>
       </div>
       <div class="skill-card">
-        <div class="skill-cat">Microservices</div>
-        <div class="skill-tags"><span class="skill-tag">RabbitMQ</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Eureka</span><span class="skill-tag">API Gateway</span></div>
+        <div class="skill-cat">Microservices &amp; Messaging</div>
+        <div class="skill-tags"><span class="skill-tag">Microservices</span><span class="skill-tag">RabbitMQ</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Eureka</span><span class="skill-tag">API Gateway</span></div>
       </div>
       <div class="skill-card">
-        <div class="skill-cat">AI &amp; Productivity</div>
-        <div class="skill-tags"><span class="skill-tag">Claude.ai</span><span class="skill-tag">Copilot</span><span class="skill-tag">ChatGPT</span><span class="skill-tag">Prompt Eng.</span><span class="skill-tag">Slingshot AI</span></div>
+        <div class="skill-cat">AI &amp; GenAI</div>
+        <div class="skill-tags"><span class="skill-tag">Google ADK</span><span class="skill-tag">Agentic Workflows</span><span class="skill-tag">Prompt Engineering</span><span class="skill-tag">Slingshot AI</span><span class="skill-tag">PS Bodhi</span></div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">Databases</div>
-        <div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">MySQL Workbench</span></div>
+        <div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">SQL</span></div>
       </div>
       <div class="skill-card">
         <div class="skill-cat">DevOps &amp; Tools</div>
-        <div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span class="skill-tag">Maven</span><span class="skill-tag">Postman</span><span class="skill-tag">IntelliJ</span></div>
+        <div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">Kibana</span><span class="skill-tag">GitLab</span><span class="skill-tag">GitHub</span><span class="skill-tag">Maven</span><span class="skill-tag">Postman</span><span class="skill-tag">IntelliJ</span><span class="skill-tag">VS Code</span></div>
       </div>
     </div>
   </div>
@@ -210,7 +226,7 @@
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-title">Hotel Rating System</div>
-        <p class="project-desc">Distributed hotel rating platform with three independent microservices — User, Hotel, and Rating. Integrated Eureka Server for service discovery and an API Gateway for centralized routing and auth enforcement. Implemented Resilience4j Circuit Breaker, Retry, and Rate Limiter patterns with RestTemplate and client-side load balancing.</p>
+        <p class="project-desc">Distributed hotel rating platform with three independent microservices — User, Hotel, and Rating. Integrated Eureka Server for service discovery and an API Gateway for centralized routing and auth enforcement. Implemented Resilience4j Circuit Breaker, Retry, and Rate Limiter patterns with RESTful inter-service communication and client-side load balancing.</p>
         <div class="project-stack">
           <span class="stack-tag">Java</span>
           <span class="stack-tag">Spring Boot</span>
@@ -220,19 +236,7 @@
           <span class="stack-tag">REST</span>
         </div>
       </div>
-
-      <div class="project-card">
-        <div class="project-title">AI-Assisted Dev Workflow Toolkit</div>
-        <p class="project-desc">Structured prompt library for AI-assisted backend development — covering code generation, refactoring, unit test scaffolding, and API documentation. Achieved <strong style="color:var(--accent3)">40%+</strong> reduction in boilerplate coding time with enterprise-grade LLM integration best practices for Java development.</p>
-        <div class="project-stack">
-          <span class="stack-tag">Prompt Engineering</span>
-          <span class="stack-tag">Claude.ai</span>
-          <span class="stack-tag">GitHub Copilot</span>
-          <span class="stack-tag">Spring Boot</span>
-          <span class="stack-tag">JUnit 5</span>
-        </div>
-      </div>
-    </div>
+    </div>    </div>
   </div>
 </section>
 
